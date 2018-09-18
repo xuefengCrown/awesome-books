@@ -4,7 +4,9 @@
 
 ### 2.1.1 Function Application and Currying
 所有过程都只有一个参数！
+
 (+ 3 4)--> ((+ 3) 4)
+
 (+ 3) 应该返回一个过程
 
 ### 2.1.2 括号的使用
@@ -18,18 +20,24 @@ we can write the expression more simply as: (+ 3 4)
 
 ### 2.1.3 built-in functions and constants
 +,-,*,/
+
 0,1,2,...
+
 True, False
+
 nil (the empty list)
+
 if
 
 复合数据构造, cons
 (car (cons a b)) --> a
+
 (cdr (cons a b)) --> (b)
 
 ### 2.1.4 the lambda abstractions 
 
 (λ (x) (+ x 1))
+
 (λ x . + x 1)
 
 consists of: the λ, the formal parameter, the body
@@ -49,6 +57,21 @@ those occurrences of x which are free in E
       (define xtail (lambda (c) (c (lambda (a) (lambda (b) b)))))	
 
       (define p ((xcons 1) 2))
+
+
+### 转换规则
+3个将表达式转换为 lambda abstractions的规则：
+1. α
+形式参数
+2. β-reduction
+将 lambda abstraction 应用到参数上
+
+3. γ
+
+## 2.3 reduction order
+
+
+
 
 
 
